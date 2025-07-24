@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment-02</title>
     <link rel="stylesheet" href="styles/flowers.css" />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+     <!-- For Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- For Font Awesome -->
+     <script src="https://kit.fontawesome.com/e62743593a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,26 +19,29 @@
 
   <body>
     <header class="lg:max-w-[1140px] lg:m-auto">
+
+      <!-- Navbar -->
       <section
-        class="navbar container flex items-center justify-between mt-[13px] mx-[16px] mb-[28px] lg:mt-[30px] lg:mx-[0px] lg:mb-[120px]"
+        class="navbar flex items-center justify-between mt-[13px] mx-[16px] mb-[28px] lg:mt-[30px] lg:mx-auto lg:mb-[120px]"
       >
         <!-- logo -->
         <div class="text-5xl">
-          <h2>faugei</h2>
+          <h2 class="font-['Noto_Serif'] text-[#E95A08]">faugei</h2>
         </div>
         <!-- manubar -->
         <div class="navbar-manu">
           <ul class="font-[Inter] lg:flex lg:list-none lg:gap-[48px]">
             <li class="font-bold hidden lg:block">Home</li>
-            <li class="hidden lg:block">Shop</li>
-            <li class="hidden lg:block">About us</li>
-            <li class="text-xl">Cart($56)</li>
+            <li class="hidden lg:block text-[#7B7C80]">Shop</li>
+            <li class="hidden lg:block text-[#7B7C80]">About us</li>
+            <li class="sd:text-xl"><i class="fa-solid fa-cart-shopping"></i> Cart($56)</li>
           </ul>
         </div>
       </section>
 
+      <!-- Banner -->
       <section
-        class="banner container lg:flex lg:justify-between lg:items-end lg:h-[461px]"
+        class="banner mb-[65px] lg:flex lg:justify-between lg:items-end lg:h-[461px] lg:mb-[120px]"
       >
         <img
           class="order-1 lg:order-2 lg:w-[570px] lg:h-[355px]"
@@ -44,22 +49,133 @@
           alt=""
         />
 
-        <div class="banner-text mt-[28px] mx-[16px] mb-[65px]">
+        <div class="banner-text mt-[28px] mx-[16px]">
           <h1 class="font-['Noto_Serif'] text-[24px] lg:text-[65px] font-bold">
-            ALWAYS FRESH <br />
+            ALWAYS FRESH <br/>
             <span class="text-[#E95A08]">FLOWERS</span>
           </h1>
 
-          <p class="font-[Inter] text-[14px] text-[#000000] mt-[13px] lg:text-[22px]">
+          <p class="font-[Inter] text-[#7B7C80] text-[14px] text-[#000000] mt-[13px] lg:text-[22px]">
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop. From classic roses to exotic blooms, we offer a wide
             variety of fresh flowers that are perfect for any occasion.
           </p>
         </div>
       </section>
+
     </header>
 
-    <main></main>
+    <main class="lg:max-w-[1140px] lg:m-auto">
+
+      <!-- Plants Section -->
+      <section class="plants-section">
+
+          <div class="section-header text-center mb-[49px] mx-[28px]">
+              <h2 class="font-['Noto_Serif'] text-[24px] lg:text-[50px] font-bold"><span class="text-[#E95A08]">Our</span> Plants</h2>
+              <p class="font-[Inter] text-[14px] text-[#7B7C80] mt-[16px] lg:text-[22px]">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br class="hidden lg:block"> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
+          </div>
+
+
+          <div class="plant-cards grid grid-cols-2 lg:grid-cols-4 gap-x-5 gap-y-[30px] mx-[15px]">
+
+            <div class="card lg:w-[270px] lg:h-[485px]">
+              <img src="assets/sample-flower-image.png" alt="">
+              <div class="mt-[25px] text-center">
+                <div class="mb-[25px]">
+                  <h3 class="font-[Inter] font-[500] text-[22px]">Lily Blossom</h4>
+                  <p class="font-[Inter] font-bold text-[22px]">20 USD</p>
+                </div>
+                <button class="btn-cart font-[Inter] font-[600] bg-[#E95A08] text-white w-full h-[50px]">ADD TO CART</button>
+              </div>
+            </div>
+
+            <div class="card lg:w-[270px] lg:h-[485px]">
+              <img src="assets/sample-flower-image.png" alt="">
+              <div class="mt-[25px] text-center">
+                <div class="mb-[25px]">
+                  <h3 class="font-[Inter] font-[500] text-[22px]">Lily Blossom</h4>
+                  <p class="font-[Inter] font-bold text-[22px]">20 USD</p>
+                </div>
+                <button class="btn-cart font-[Inter] font-[600] bg-[#E95A08] text-white w-full h-[50px]">ADD TO CART</button>
+              </div>
+            </div>
+
+            <div class="card lg:w-[270px] lg:h-[485px]">
+              <img src="assets/sample-flower-image.png" alt="">
+              <div class="mt-[25px] text-center">
+                <div class="mb-[25px]">
+                  <h3 class="font-[Inter] font-[500] text-[22px]">Lily Blossom</h4>
+                  <p class="font-[Inter] font-bold text-[22px]">20 USD</p>
+                </div>
+                <button class="btn-cart font-[Inter] font-[600] bg-[#E95A08] text-white w-full h-[50px]">ADD TO CART</button>
+              </div>
+            </div>
+
+            <div class="card lg:w-[270px] lg:h-[485px]">
+              <img src="assets/sample-flower-image.png" alt="">
+              <div class="mt-[25px] text-center">
+                <div class="mb-[25px]">
+                  <h3 class="font-[Inter] font-[500] text-[22px]">Lily Blossom</h4>
+                  <p class="font-[Inter] font-bold text-[22px]">20 USD</p>
+                </div>
+                <button class="btn-cart font-[Inter] font-[600] bg-[#E95A08] text-white w-full h-[50px]">ADD TO CART</button>
+              </div>
+            </div>
+            
+            <div class="card lg:w-[270px] lg:h-[485px]">
+              <img src="assets/sample-flower-image.png" alt="">
+              <div class="mt-[25px] text-center">
+                <div class="mb-[25px]">
+                  <h3 class="font-[Inter] font-[500] text-[22px]">Lily Blossom</h4>
+                  <p class="font-[Inter] font-bold text-[22px]">20 USD</p>
+                </div>
+                <button class="btn-cart font-[Inter] font-[600] bg-[#E95A08] text-white w-full h-[50px]">ADD TO CART</button>
+              </div>
+            </div>
+            
+            <div class="card lg:w-[270px] lg:h-[485px]">
+              <img src="assets/sample-flower-image.png" alt="">
+              <div class="mt-[25px] text-center">
+                <div class="mb-[25px]">
+                  <h3 class="font-[Inter] font-[500] text-[22px]">Lily Blossom</h4>
+                  <p class="font-[Inter] font-bold text-[22px]">20 USD</p>
+                </div>
+                <button class="btn-cart font-[Inter] font-[600] bg-[#E95A08] text-white w-full h-[50px]">ADD TO CART</button>
+              </div>
+            </div>
+            
+            <div class="card lg:w-[270px] lg:h-[485px]">
+              <img src="assets/sample-flower-image.png" alt="">
+              <div class="mt-[25px] text-center">
+                <div class="mb-[25px]">
+                  <h3 class="font-[Inter] font-[500] text-[22px]">Lily Blossom</h4>
+                  <p class="font-[Inter] font-bold text-[22px]">20 USD</p>
+                </div>
+                <button class="btn-cart font-[Inter] font-[600] bg-[#E95A08] text-white w-full h-[50px]">ADD TO CART</button>
+              </div>
+            </div>
+            
+            <div class="card lg:w-[270px] lg:h-[485px]">
+              <img src="assets/sample-flower-image.png" alt="">
+              <div class="mt-[25px] text-center">
+                <div class="mb-[25px]">
+                  <h3 class="font-[Inter] font-[500] text-[22px]">Lily Blossom</h4>
+                  <p class="font-[Inter] font-bold text-[22px]">20 USD</p>
+                </div>
+                <button class="btn-cart font-[Inter] font-[600] bg-[#E95A08] text-white w-full h-[50px]">ADD TO CART</button>
+              </div>
+            </div>
+            
+
+          </div>
+
+
+
+      </section>
+
+
+
+    </main>
 
     <footer></footer>
   </body>
